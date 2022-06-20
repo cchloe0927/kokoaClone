@@ -1,0 +1,24 @@
+.nav {
+    position: fixed; /* 스크롤 등을 해도 내가 원하는 곳에 계속 있게 하는 방법  */
+    bottom: 0;
+    width: 100%;
+    background-color: #f9f9fa;
+    padding: 20px 50px;
+    box-sizing: border-box; /* 박스의 크기를 어떤 것을 기준으로 계산할지 : 테두리를 기준으로 크기 설정  */
+    border-top: 1px solid raba(121, 121, 121, 0.3);
+}
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+.nav__link {
+    position: relative;
+    color: #2e363e;
+}
+
+.nav__notification {
+    /* body로 범위를 설정하기 때문에 부모에  position: relative;를 정해주고 써야함 */
+    position: absolute;
+    left: 15px;
+    bottom: 15px
+}
